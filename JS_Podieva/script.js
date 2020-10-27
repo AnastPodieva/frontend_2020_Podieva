@@ -17,22 +17,12 @@ var employees = [{"name":"Alex","surname":"Yavkin","position":"sr. engineer","de
 	department: 'UX'
 }
 //1
-function yourFunction(employees) {
-  const result = [];
+//function yourFunction(employees) {
+  //const result = [];
   /* Write your code here */
-	for (let index = 0; index < employees.length; index++) {
-		if (employees[index].salary < 25000) {
-			if (employees[index].department="SD") {
-				result.push(employees[index]);
-			}
-		}
-	}	
-	result.sort(function(a,b)
-	{
-		return new Date(a.birthday) - new Date(b.birthday);
-	})
-  return result;
-}
+var yourFunction = employees.filter(function(employees) {
+	return employees.salary < 25000 && employees.department == "SD";}).sort(function(a,b) { return new Date(a.birthday) - new Date(b.birthday); });
+	
 //2
 function numberEmployees(employees){
 	let map = new Map();
@@ -48,15 +38,14 @@ function numberEmployees(employees){
 			map.set(department,1);
 		}
 	}
-	let result = Array.from(map.entries());
-	result.sort(function(a,b){
+	let result = Array.from(map.entries()).sort(function(a,b){
 		return a[1]-b[1];
 	});
 	return result;
 }
  // should show the result
-console.log(yourFunction(employees));
-//console.log(numberEmployees(employees));
+ console.log(yourFunction);
+console.log(numberEmployees(employees));
 
 /**
  * Example function
