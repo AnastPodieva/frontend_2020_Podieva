@@ -1,4 +1,5 @@
 body {
+    margin: 0px;
     font-family: "Roboto";
 }
 
@@ -8,40 +9,46 @@ main {
 
 header {
     display: flex;
-    color: #55B4BA;
-}
-footer {
-        display: flex;
-        color: #55B4BA;
+    color: #55b4ba;
 }
 
-h2{
+footer {
+    display: flex;
+    color: #55b4ba;
+}
+
+.footer-container {
+background-color: #55B4BA;
+width: 100%;
+height: 150px;
+}
+
+h2 {
     text-align: center;
     font-size: 27px;
 }
+
 table {
     width: 100%;
     height: 50px;
-    
 }
 
 td {
-width: 20%;
+    width: 20%;
 }
 
-tr{
-   
-   text-align: center;
+tr {
+    text-align: center;
 }
 
 .top-line {
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	/* height: 60%; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     margin-top: 4px;
 }
-.top-line-location{
+
+.top-line-location {
     width: 65%;
     padding-left: 5%;
 }
@@ -50,15 +57,14 @@ tr{
     justify-content: space-between;
     align-items: center;
     width: 500px;
-	height: 35px;
-	
-	margin-top: 4px;
-
+    height: 35px;
+    margin-top: 4px;
 }
+
 .top-line-container {
     padding-left: 10%;
-
 }
+
 .top-container {
     width: 100%;
     height: 140px;
@@ -69,24 +75,23 @@ tr{
     height: 141px;
     padding-left: 40%;
 }
+
 .search-main {
     align-items: center;
     padding-left: 10%;
 }
+
 .icon {
     padding-left: 15%;
     align-items: center;
     width: 5%;
 }
 
-nav
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-    background-color: #F2994A;
-	
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2994a;
 }
 
 .nav-table {
@@ -94,8 +99,8 @@ nav
     height: 50px;
 }
 
-.catalog{
-    background-color: #55B4BA;
+.catalog {
+    background-color: #55b4ba;
 }
 
 .sort-table {
@@ -103,27 +108,28 @@ nav
     width: 70%;
 }
 
-.sort-table-quantity{
+.sort-table-quantity {
     padding-right: 20px;
-    
 }
+
 .old-price {
-    color:#EB5757 ;
-    text-decoration:line-through;
+    color: #eb5757;
+    text-decoration: line-through;
 }
 
 .footerTD {
     width: 4%;
 }
 
-.footerTD-numbers{
+.footerTD-numbers {
     width: 50%;
     text-align: center;
     font-size: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
+
 .footer-menu {
     text-align: center;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
